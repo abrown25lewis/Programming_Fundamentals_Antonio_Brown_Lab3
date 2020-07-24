@@ -1,5 +1,7 @@
 
 public class Box {
+	
+	public int size = 0;
 
 	public static void main(String[] args) {
 
@@ -12,22 +14,20 @@ public class Box {
 
 	public void printBox() {
 
-		int size = 0;
+		int r,c;
 		
 
 		// creates loop for rows
 		for (r = 0; r < size; r++) {
 
-			System.out.print("*");
+				// create loop for columns
+				for (c = 0; c < size; c++) {
 
-		}
+					System.out.print("*");
+				}
 
-		// create loop for columns
-		for (c = 0; c < size; c++) {
-
-			System.out.print("*");
+				System.out.println("");
 		}
 
 	}
-
 }
